@@ -1,4 +1,4 @@
-p, a,{
+p, a{
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -42,8 +42,7 @@ nav a{
 }
 
 .currentPage {
-    border-bottom: 3px solid #fe7467;
-    
+    border-bottom: 3px solid #fe7467; 
 }
 
 .funkoSpider{
