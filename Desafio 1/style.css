@@ -1,0 +1,79 @@
+p, a,{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: 700px;
+    letter-spacing: 1.5px;
+    padding: 10px 0px;
+}
+body{
+    max-width: 1440px;
+    margin: 0 auto
+}
+
+/* header */
+header, .whoWeAre, .catalogue{
+    padding: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 750px;
+    
+}
+
+.headerHome{
+    background-image: url("img/spidermanheader3.jpg");
+}
+
+.logo{
+    max-width: 150px;
+    height: auto;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 23px;
+ /*   margin:auto; */
+    padding-bottom: 10px;
+}
+
+.currentPage {
+    border-bottom: 3px solid #fe7467;
+    
+}
+
+.funkoSpider{
+    max-width: 320px;
+    height: auto;
+    position: relative;
+    top: 70px;
+    left: 175px;
+}
+
+/* quem somos */
+
+section.whoWeAre{
+    background-image: url("img/thor_header.jpg");
+}
+
+.titleWho{
+    color: white;
+}
+
+.titleWho::after{
+    display: block;
+    content: '';
+    width: 100px;
+    height: 3px;
+    margin: 10px auto;
+    background-color: white;
+}
+
+p.whoWeAre{
+    color: white;
+    font-size: 20px;
+}
