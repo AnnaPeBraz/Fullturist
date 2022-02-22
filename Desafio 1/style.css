@@ -5,7 +5,7 @@ p, a{
 h2{
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    font-weight: 700px;
+    font-weight:700;
     letter-spacing: 1.5px;
     padding: 10px 0px;
 }
@@ -118,10 +118,12 @@ p.catalogue{
     font-size: 18px;
     font-weight: 900;
     color: white;
-    border-radius: 15px;
+
 }
 
-
+.homeCatalogueButton{
+    border-radius: 20px;
+}
 
 /* CATALOGO-PAGE */
 .headerCatalogue{
@@ -150,4 +152,9 @@ p.catalogue{
     font-weight: 600;
     font-style: italic;
     font-size: 30px;
+}
+
+.productBuy{
+    border-radius: 40px;
+    padding: 15px;
 }
