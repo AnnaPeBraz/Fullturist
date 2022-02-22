@@ -122,7 +122,32 @@ p.catalogue{
 }
 
 
+
 /* CATALOGO-PAGE */
 .headerCatalogue{
     background-image: url('/img/captainmarvelheader.jpg');
+}
+
+.novidadeCaptain{
+    max-width: 521px;
+    height: auto;
+    position: relative;
+    top: 250px;
+    left: 194px;
+}
+
+.defaultProduct{
+    max-width: 480px;
+    height: auto;
+}
+
+.aboutProduct{
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.price{
+    font-weight: 600;
+    font-style: italic;
+    font-size: 30px;
 }
