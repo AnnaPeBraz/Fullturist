@@ -2,6 +2,9 @@ p, a{
     font-family: 'Montserrat', sans-serif;
 }
 
+li{
+    list-style: none;
+}
 h2{
     font-family: 'Montserrat', sans-serif;
     text-align: center;
@@ -157,4 +160,9 @@ p.catalogue{
 .productBuy{
     border-radius: 40px;
     padding: 15px;
+}
+
+/* contact page */
+.headerContact{
+    background-image: url('img/contatoheader.jpg');
 }
