@@ -15,7 +15,7 @@ body{
 }
 
 /* header */
-header, .whoWeAre, .catalogue{
+header{
     padding: 30px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -49,7 +49,7 @@ nav a{
     max-width: 320px;
     height: auto;
     position: relative;
-    top: 70px;
+    top: 100px;
     left: 175px;
 }
 
@@ -57,10 +57,15 @@ nav a{
 
 section.whoWeAre{
     background-image: url("img/thor_header.jpg");
+    padding: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 750px;
 }
 
 .titleWho{
     color: white;
+
 }
 
 .titleWho::after{
@@ -75,4 +80,49 @@ section.whoWeAre{
 p.whoWeAre{
     color: white;
     font-size: 20px;
+}
+
+/* Catalogo */
+h2.titleCatalogue{
+    text-transform: uppercase;
+}
+.titleCatalogue::after{
+    display: block;
+    content: '';
+    width: 100px;
+    height: 3px;
+    margin: 10px auto;
+    background-color: #fe7467;
+}
+.catalogue{
+    padding: 30px;
+    min-height: auto;
+}
+.sectionCatalogue{
+    width: 700px;
+    height: auto;
+    position: relative;
+    top: 100px;
+    left: 175px;
+}
+
+p.catalogue{
+    font-size: 20px;
+}
+
+.defaultButton{
+    background-image: linear-gradient(to bottom, #fe7467, #fc3836);
+    border: none;
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 900;
+    color: white;
+    border-radius: 15px;
+}
+
+
+/* CATALOGO-PAGE */
+.headerCatalogue{
+    background-image: url('/img/captainmarvelheader.jpg');
 }
