@@ -89,7 +89,7 @@ p.whoWeAre{
 h2.titleCatalogue, .entreEmContato{
     text-transform: uppercase;
 }
-.titleCatalogue, .entreEmContato::after{
+.titleCatalogue::after, .entreEmContato::after{
     display: block;
     content: '';
     width: 100px;
