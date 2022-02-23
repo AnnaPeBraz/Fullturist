@@ -14,24 +14,27 @@
 <body>
     <header class="headerContact">
         <nav>
-            <img src="/img/logo.png" alt="logo">
+            <img src="/img/logo.png" alt="logo" class="logo">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="catalogue.html">Catálogos</a></li>
                 <li><a href="contact.html" class="currentPage">Contato</a></li>
             </ul>
         </nav>
-        <img src="/img/contatotitle.png" alt="">
+        <img src="/img/contatotitle.png" alt="" class="contatoRobin">
     </header>
     <main>
-        <h2>Entre em contato</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima adipisci similique illo qui, cum possimus. Quasi sunt deserunt ab. Accusantium exercitationem officiis iste itaque sint facilis eaque doloribus fugit iure?</p>
+        <h2 class="entreEmContato">Entre em contato</h2>
+        <p class="contactP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima adipisci similique illo qui, cum possimus. Quasi sunt deserunt ab. Accusantium exercitationem officiis iste itaque sint facilis eaque doloribus fugit iure?</p>
         <form>
-            <input type="text" name="inputName" id="inputName" placeholder="Nome">
-            <input type="email" name="inputEmail" id="inputEmail" placeholder="Email">
-            <input type="text" name="inputTel" id="inputTel" placeholder="Telefone">
-            <textarea name="inputText" id="inputText" cols="30" rows="10" placeholder="Como podemos te ajudar?"></textarea>
-            <input type="button" value="Enviar">
+            <input type="text" name="inputName" id="inputName" placeholder="Nome" class="defaultInput">
+            <input type="email" name="inputEmail" id="inputEmail" placeholder="Email" class="defaultInput">
+            <input type="text" name="inputTel" id="inputTel" placeholder="Telefone" class="defaultInput">
+            <textarea name="inputText" id="inputText" cols="30" rows="10" placeholder="Como podemos te ajudar?" class="defaultInput"></textarea>
+            <br>
+            <div id="butao">            
+                <input type="button" value="Enviar" class="defaultButton contactButton">
+            </div>
         </form>
     </main>
 </body>
