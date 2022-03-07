@@ -27,6 +27,7 @@ header{
 }
 
 .headerHome{
+    grid-area: hh;
     background-image: url("img/spidermanheader3.jpg");
 }
 
@@ -35,12 +36,26 @@ header{
     height: auto;
 }
 
+nav{
+    display: flex; 
+    flex-flow: row nowrap;
+    /* alinha os itens de forma centralizada dentro do nav: */
+    align-items: center; 
+}
+
+nav ul{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%; 
+    max-width: 50%;
+    justify-content: space-evenly;
+}
+
 nav a{
     color: white;
     text-decoration: none;
     font-weight: 700;
     font-size: 23px;
- /*   margin:auto; */
     padding-bottom: 10px;
 }
 
@@ -52,13 +67,15 @@ nav a{
     max-width: 320px;
     height: auto;
     position: relative;
-    top: 100px;
+    top: 150px;
     left: 175px;
 }
+
 
 /* quem somos */
 
 section.whoWeAre{
+    grid-area: hwa;
     background-image: url("img/thor_header.jpg");
     padding: 30px;
     background-repeat: no-repeat;
@@ -81,36 +98,39 @@ section.whoWeAre{
 }
 
 p.whoWeAre{
+    grid-area: texthwa;
     color: white;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 /* Catalogo */
 h2.titleCatalogue, .entreEmContato{
     text-transform: uppercase;
+    font-size:40px ;
 }
 .titleCatalogue::after, .entreEmContato::after{
     display: block;
     content: '';
-    width: 100px;
-    height: 3px;
+    width: 150px;
+    height: 6px;
     margin: 10px auto;
     background-color: #fe7467;
 }
 .catalogue{
+    grid-area: cat;
     padding: 30px;
     min-height: auto;
 }
 .sectionCatalogue{
     width: 700px;
     height: auto;
-    position: relative;
+    /* position: relative;
     top: 100px;
-    left: 175px;
+    left: 175px; */
 }
 
 p.catalogue{
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .defaultButton{
@@ -128,6 +148,34 @@ p.catalogue{
     border-radius: 20px;
 }
 
+/* Grid Index */
+.bodyHome{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "hh"
+    "hwa"
+    "cat" ;
+}
+
+.hwa-container{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    ". texthwa";
+}
+
+.catContainer{
+    display: flex;
+    flex: row nowrap;
+}
+
+
+
+
+
 /* CATALOGO-PAGE */
 .headerCatalogue{
     background-image: url('/img/captainmarvelheader.jpg');
@@ -142,13 +190,13 @@ p.catalogue{
 }
 
 .defaultProduct{
-    max-width: 480px;
+    max-width: 95%;;
     height: auto;
 }
 
 .aboutProduct{
-    font-weight: 500;
-    font-size: 30px;
+    font-weight: 600;
+    font-size: 25px;
 }
 
 .price{
@@ -161,6 +209,26 @@ p.catalogue{
     border-radius: 40px;
     padding: 15px;
 }
+
+/* GRID/Flex Catalogo */
+
+.contProducts{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.contProductsGrid{
+    max-width: 400px;
+    padding: 40px;
+    
+}
+
+
+
+
 
 /* contact page */
 .headerContact{

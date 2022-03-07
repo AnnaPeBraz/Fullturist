@@ -12,7 +12,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,600&display=swap" rel="stylesheet">
 
 </head>
-<body>
+<body class="bodyHome">
     <header class="headerHome">
         <nav>
             <img src="/img/logo.png" alt="logo" class="logo">
@@ -28,14 +28,21 @@
    <main>
        <section class="whoWeAre">
            <h2 class="titleWho">QUEM SOMOS</h2>
-           <p class="whoWeAre">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum obcaecati cum repellendus explicabo? Eum doloribus praesentium dolorum ea officia, accusantium, maiores cum dignissimos itaque magnam illo. Facere corrupti ullam maiores.</p>
-       </section>
+           <div class="hwa-container">
+               <p class="whoWeAre">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum obcaecati cum repellendus explicabo? Eum doloribus praesentium dolorum ea officia, accusantium, maiores cum dignissimos itaque magnam illo. Facere corrupti ullam maiores.</p>
+           </div> 
+        </section>
 
        <section class="catalogue">
            <h2 class="titleCatalogue">Catálogo</h2>
-           <img src="/img/bonecos.png" alt="" class="sectionCatalogue">
-           <p class="catalogue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt molestias soluta omnis deserunt, libero rem, in, corrupti veniam quaerat iste suscipit. Sunt, excepturi! At iste vero repellendus doloribus vitae fuga!</p>
-           <input type="button" value="Ver Catálogo" class="defaultButton homeCatalogueButton">
+           <div class="catContainer">
+                <img src="/img/bonecos.png" alt="" class="sectionCatalogue">          
+                <div>
+                    <p class="catalogue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt molestias soluta omnis deserunt, libero rem, in, corrupti veniam quaerat iste suscipit. Sunt, excepturi! At iste vero repellendus doloribus vitae fuga!</p>
+                    <a href="catalogue.html"><input type="button" value="Ver Catálogo" class="defaultButton homeCatalogueButton" ></a>
+                </div>
+                
+            </div>
        </section>
    </main>
 </body>
