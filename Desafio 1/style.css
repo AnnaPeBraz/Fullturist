@@ -146,6 +146,7 @@ p.catalogue{
 
 .homeCatalogueButton, .contactButton{
     border-radius: 20px;
+    cursor: pointer;
 }
 
 /* Grid Index */
@@ -156,7 +157,7 @@ p.catalogue{
     grid-template-areas:
     "hh"
     "hwa"
-    "cat" ;
+    "cat" 
 }
 
 .hwa-container{
@@ -216,8 +217,9 @@ p.catalogue{
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+
 }
 
 .contProductsGrid{
@@ -260,6 +262,7 @@ p.catalogue{
     border-radius: 15px;
     border-color: lightgray;
     background-color: whitesmoke;
+    width:400px;
 }
 
 input::placeholder{
@@ -271,11 +274,32 @@ textarea::placeholder{
 }
 
 .contactButton{
-    min-width: 800px;
+    min-width: 900px;
     /* margin: auto 360px; */
     display: center;
 }
 
 #butao{
     text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
 }
+
+/* grid/flex contato */
+.containerTextForm{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    /* flex-basis: auto; */
+    column-gap: 10px;
+    /* gap: 10px; */
+}
+
+.inputsForm{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
