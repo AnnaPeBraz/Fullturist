@@ -22,7 +22,7 @@ header{
     padding: 30px;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 750px;
+    min-height: 650px;
     
 }
 
@@ -80,19 +80,19 @@ section.whoWeAre{
     padding: 30px;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 750px;
+    min-height: 600px;
 }
 
 .titleWho{
     color: white;
-
+    font-size:35px ;
 }
 
 .titleWho::after{
     display: block;
     content: '';
-    width: 100px;
-    height: 3px;
+    width: 150px;
+    height: 6px;
     margin: 10px auto;
     background-color: white;
 }
@@ -106,7 +106,7 @@ p.whoWeAre{
 /* Catalogo */
 h2.titleCatalogue, .entreEmContato{
     text-transform: uppercase;
-    font-size:40px ;
+    font-size:35px ;
 }
 .titleCatalogue::after, .entreEmContato::after{
     display: block;
@@ -166,6 +166,7 @@ p.catalogue{
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
     ". texthwa";
+    column-gap: 200px;
 }
 
 .catContainer{
@@ -197,18 +198,20 @@ p.catalogue{
 
 .aboutProduct{
     font-weight: 600;
-    font-size: 25px;
+    font-size: 23px;
 }
 
 .price{
     font-weight: 600;
     font-style: italic;
-    font-size: 30px;
+    font-size: 25px;
+    margin: 10px;
 }
 
 .productBuy{
     border-radius: 40px;
-    padding: 15px;
+    padding: 10px;
+    width: 150px;
 }
 
 /* GRID/Flex Catalogo */
@@ -223,7 +226,7 @@ p.catalogue{
 }
 
 .contProductsGrid{
-    max-width: 400px;
+    max-width: 340px;
     padding: 40px;
     
 }
@@ -248,8 +251,8 @@ p.catalogue{
 .contactP{
     text-align: center;
     margin: 50px 350px;
-    font-weight: 400;
-    font-size: 18px;
+    font-weight: 500;
+    font-size: 25px;
 }
 
 .defaultInput{
