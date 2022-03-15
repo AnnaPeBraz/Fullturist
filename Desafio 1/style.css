@@ -306,3 +306,123 @@ textarea::placeholder{
     align-items: stretch;
 }
 
+ @media screen /*and (max-width: 480px) */ {
+    body{
+        max-width: 1440px;
+        margin: 0 auto
+    }
+    nav{
+        flex-flow: column wrap;
+        align-items: center; 
+    }
+
+    header{
+        padding: 0px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 415px;
+        
+    }
+    nav a{
+        font-size: 13px;
+    }
+
+    .logo{
+        max-width: 100px;
+        height: auto;
+        padding: 15px;
+    }
+
+    nav ul{
+        width: 100%; 
+        max-width: 100%; 
+        padding-left: 0px;
+    }
+    .headerHome{
+        grid-area: hh;
+        background-image: url("img/spidermanheader_mobile.jpg");
+    }
+    
+    .funkoSpider{
+        max-width: 155px;
+        height: fit-content;
+        position: relative;
+        top: 120px;
+        left: 27px;
+    }
+
+    section.whoWeAre{
+        grid-area: hwa;
+        background-image: linear-gradient(to bottom, #fe7467, #fc3836);
+        /* margin-right: 30px;
+        padding-left: 30px; */
+        /* background-repeat: no-repeat;
+        background-size: cover;*/
+        min-height: 380px; 
+        text-align: center;
+        padding: 1px;
+    }  
+    p.whoWeAre{
+        font-size: 13px;
+        padding: 30px;
+        margin-top: auto;
+    }
+    .titleWho{
+        color: white;
+        font-size:18px ;
+    }
+    .titleWho::after{
+        width: 80px;
+        height: 3px;
+    }
+
+    .hwa-container{
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "texthwa";
+        /* column-gap: 200px; */
+    }
+
+    .sectionCatalogue{
+        width: 330px;
+        height: auto;
+        /*top: 100px;
+        left: 175px; */
+
+    }
+    .catContainer{
+        flex-flow: column-reverse wrap;
+        text-align: center;    
+    }
+
+    p.catalogue{
+        font-size: 13px;
+        align-content: center;
+    }
+
+    h2.titleCatalogue{
+        margin: 0%;
+        font-size:18px ;
+    }
+    .titleCatalogue::after, .entreEmContato::after{
+        width: 80px;
+        height: 3px;
+    }
+
+    .catalogue{
+        display: flex;
+        flex-flow: column wrap;
+        padding: 15px;
+        min-height: auto;
+    }
+
+    .homeCatalogueButton{
+        font-size: 12px;
+        font-weight: 900;
+        padding: 12px;
+        border-radius: 15px;
+        margin-bottom: 45px;
+    }
+}
