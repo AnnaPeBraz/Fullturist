@@ -124,9 +124,6 @@ h2.titleCatalogue, .entreEmContato{
 .sectionCatalogue{
     width: 700px;
     height: auto;
-    /* position: relative;
-    top: 100px;
-    left: 175px; */
 }
 
 p.catalogue{
@@ -277,7 +274,6 @@ textarea::placeholder{
 
 .contactButton{
     min-width: 900px;
-    /* margin: auto 360px; */
     display: center;
 }
 
@@ -293,9 +289,7 @@ textarea::placeholder{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    /* flex-basis: auto; */
     column-gap: 10px;
-    /* gap: 10px; */
 }
 
 .inputsForm{
@@ -305,7 +299,7 @@ textarea::placeholder{
     align-items: stretch;
 }
 
- @media screen /*and (max-width: 480px) */ {
+ @media screen and (max-width: 780px) {
     body{
         max-width: 1440px;
         margin: 0 auto
@@ -339,7 +333,7 @@ textarea::placeholder{
     }
     .headerHome{
         grid-area: hh;
-        background-image: url("img/spidermanheader_mobile.jpg");
+        background-image: url("../img/spidermanheader_mobile.jpg");
     }
     
     .funkoSpider{
@@ -377,7 +371,6 @@ textarea::placeholder{
         grid-template-columns: 100%;
         grid-template-areas: 
         "texthwa";
-        /* column-gap: 200px; */
     }
 
     .sectionCatalogue{
@@ -451,7 +444,7 @@ textarea::placeholder{
 
     /* Contact */
     .headerContact{
-        background-image: url('img/contatoheader_mobile.jpg');
+        background-image: url('../img/contatoheader_mobile.jpg');
     }
     .contatoRobin{
         display: none;
@@ -472,6 +465,7 @@ textarea::placeholder{
         font-size: 13px;
         width:240px;
         margin: 10px;
+        border-radius: 7px;
 
     }
     .inputsForm{
@@ -482,7 +476,6 @@ textarea::placeholder{
     }   
     .contactButton{
         min-width: 80%;
-        /* margin: auto 360px; */
         display: center;
         padding: 10px;
         font-size: 12px;
