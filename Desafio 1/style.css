@@ -141,7 +141,6 @@ p.catalogue{
     font-size: 18px;
     font-weight: 900;
     color: white;
-
 }
 
 .homeCatalogueButton, .contactButton{
@@ -354,10 +353,6 @@ textarea::placeholder{
     section.whoWeAre{
         grid-area: hwa;
         background-image: linear-gradient(to bottom, #fe7467, #fc3836);
-        /* margin-right: 30px;
-        padding-left: 30px; */
-        /* background-repeat: no-repeat;
-        background-size: cover;*/
         min-height: 380px; 
         text-align: center;
         padding: 1px;
@@ -388,9 +383,6 @@ textarea::placeholder{
     .sectionCatalogue{
         width: 330px;
         height: auto;
-        /*top: 100px;
-        left: 175px; */
-
     }
     .catContainer{
         flex-flow: column-reverse wrap;
@@ -402,7 +394,7 @@ textarea::placeholder{
         align-content: center;
     }
 
-    h2.titleCatalogue{
+    h2.titleCatalogue, .entreEmContato{
         margin: 0%;
         font-size:18px ;
     }
@@ -455,5 +447,45 @@ textarea::placeholder{
         padding: 8px;
         width: 110px;
         font-size: 12px;
+    }
+
+    /* Contact */
+    .headerContact{
+        background-image: url('img/contatoheader_mobile.jpg');
+    }
+    .contatoRobin{
+        display: none;
+    }
+    .entreEmContato{
+        margin-top: 30px;
+    }
+    .contactP{
+            text-align: center;
+            margin: 20px 50px 30px;
+            font-weight: 500;
+            font-size: 12px;
+    }
+    .defaultInput{
+        border-style:solid;
+        border-width: 2.5px;
+        padding: 10px;
+        font-size: 13px;
+        width:240px;
+        margin: 10px;
+
+    }
+    .inputsForm{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        align-items: stretch;
+    }   
+    .contactButton{
+        min-width: 80%;
+        /* margin: auto 360px; */
+        display: center;
+        padding: 10px;
+        font-size: 12px;
+        border-radius: 15px;
     }
 }
