@@ -425,4 +425,35 @@ textarea::placeholder{
         border-radius: 15px;
         margin-bottom: 45px;
     }
+
+
+
+    /* catalogo */
+
+    .headerCatalogue{
+        background-image: url('/img/captainmarvelheader_Mobile.jpg');
+    }
+    .novidadeCaptain{
+        display: none;
+    }
+    .aboutProduct{
+        font-weight: 600;
+        font-size: 15px;
+
+    }
+    .price{
+        font-weight: 900;
+        font-size: 14px;
+        margin: 10px;
+    }
+    .contProductsGrid{
+        margin: 0 30px;
+        padding: 10px 40px;
+    }
+    .productBuy{
+        border-radius: 40px;
+        padding: 8px;
+        width: 110px;
+        font-size: 12px;
+    }
 }
