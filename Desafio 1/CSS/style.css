@@ -28,7 +28,7 @@ header{
 
 .headerHome{
     grid-area: hh;
-    background-image: url("img/spidermanheader3.jpg");
+    background-image: url("../img/spidermanheader3.jpg");
 }
 
 .logo{
@@ -76,7 +76,7 @@ nav a{
 
 section.whoWeAre{
     grid-area: hwa;
-    background-image: url("img/thor_header.jpg");
+    background-image: url("../img/thor_header.jpg");
     padding: 30px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -176,7 +176,7 @@ p.catalogue{
 
 /* CATALOGO-PAGE */
 .headerCatalogue{
-    background-image: url('/img/captainmarvelheader.jpg');
+    background-image: url('../img/captainmarvelheader.jpg');
 }
 
 .novidadeCaptain{
@@ -233,7 +233,7 @@ p.catalogue{
 
 /* contact page */
 .headerContact{
-    background-image: url('img/contatoheader.jpg');
+    background-image: url('../img/contatoheader.jpg');
 }
 
 .contatoRobin{
