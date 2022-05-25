@@ -6,36 +6,45 @@ const formulario = document.querySelector('form') //puxa todo o formulario
 //const botaoEntrar = document.querySelector('#buttonIn') // puxa apenas o botao
 const listaToDo = Array()
 const listaDom = document.querySelector(".todo-list") // pega o ul do DOM
-let itemLi = document.createElement('li') //cria um item (da ul)
-let botaoX = document.createElement('button') //botao de excluir
-let botaoOk = document.createElement('button') //botao de tarefa feita
-let divNova = document.createElement('div') //criação da div que engloba todo o resto
 
 
 formulario.addEventListener('submit', (eventSubmit) =>{ //ao realizar a ação de submit do formulario, realizar essa função
     eventSubmit.preventDefault();
     if (validacaoComum(inputForm.value)){ //se validação for positiva, insere na lista o valor
         inLista(inputForm.value) //funçao de add na lista/array
-        console.log(listaToDo)
+        
         mostraNaPag(inputForm.value)
     }else{
         alert('Por favor escreva algum valor')
     }
     inputForm.value ='';
-
+    
 });
 
 
-// console.log(listaToDo)
-
-function apertaBtnX(item, lista){
+//nao ta funcionando direito
+const removeDaLista = (item, lista) => {
     let posicao = lista.indexOf(item)
-    lista.splice(posicao,1)
+    lista.splice(posicao ,1)
+    console.log(lista)
 }
 
-    botaoX.addEventListener('click', apertaBtnX(inputForm.value, listaToDo))
+// function removeDaDom(item,lista){
+//     let posicao = 
+// }
+
 
 function mostraNaPag(entrada){//cria e mostra os negocio na DOM
+    let itemLi = document.createElement('li') //cria um item (da ul)
+    let botaoX = document.createElement('button') //botao de excluir
+    let botaoOk = document.createElement('button') //botao de tarefa feita
+    let divNova = document.createElement('div') //criação da div que engloba todo o resto
+    
+    botaoX.addEventListener('click', (evento) =>{
+        console.log(listaToDo)
+        removeDaLista(entrada, listaToDo)
+        // removeDaDom()
+    })
     //css do li
     itemLi.innerHTML = entrada
     itemLi.classList = "todo-item"
@@ -60,7 +69,8 @@ function mostraNaPag(entrada){//cria e mostra os negocio na DOM
 }
 
 function inLista (entrada){ //add entrada a lista
-    const item = {
+    const item =
+    {
         "id": listaToDo.length + 1,
         "texto": entrada,
         "status": "pendente"
