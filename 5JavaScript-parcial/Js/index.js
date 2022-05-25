@@ -1,4 +1,4 @@
-const dados = localStorage.getItem('lista');
+const dados = localStorage.getItem('lista'); 
 
 const listToDo = JSON.parse(dados);  
 
@@ -32,28 +32,30 @@ const pressButtonPlus = function(eventSubmit){
     
         newItem(addText);
 
-
-
+        //criar um "to do" da lista
         let li1 = document.createElement('li');
         li1.innerHTML = addText.value;
         li1.classList = "todo-item";
 
-        let butaoFeito = document.createElement('button')
-        butaoFeito.classList = "check-btn";
-        butaoFeito.innerHTML = '<i class="fas fa-check" aria-hidden="true"></i>';
-        butaoFeito.id = listToDo.length;
+        //criar o botao de check
+        let butaoFeito = document.createElement('button') //botao criado
+        butaoFeito.classList = "check-btn"; //coloca uma classe nesse botao
+        butaoFeito.innerHTML = '<i class="fas fa-check" aria-hidden="true"></i>'; //coloca o desenhinho
+        butaoFeito.id = listToDo.length; //coloca no id do botao o numero da "fila" em que ele esta para conseguir identificar o "to do" que será clicado
+        //le a ação de clicar e 
         butaoFeito.addEventListener('click', function(b){
              
             let botao = b.target;
             let id = parseInt(botao.id) ;
  
-          //  excluir elemento da lista
+          // tickar elemento da lista
             for(let i = 0; i < listToDo.length; i++){
                 if(id == listToDo[i].id){
-                    li1.classList = "todo-item completed";
-                    item.status = "Finalizado"
+                    li1.classList = "todo-item completed"; //coloca classe
+                    item.status = "Finalizado" // altera o status no objeto
                 }
-            } console.log(item.status)
+            } console.log(item) 
+            console.log(listToDo)
         })
 
         let butaoX = document.createElement('button')
@@ -71,21 +73,24 @@ const pressButtonPlus = function(eventSubmit){
                 if(id == listToDo[i].id){
                      listToDo.splice(i,1);
                  }
-            }
+            }console.log(listToDo)
+            
 
             //remover elemento da tela
             let divRemovida = document.querySelector('#div'+id)
             lista.removeChild(divRemovida);
           });
     
-        let diva = document.createElement('div'); // add elementos a div
+        let diva = document.createElement('div'); // criar elementos a div
         diva.classList = "todo";
         diva.id = 'div'+ listToDo.length;
-        diva.append(li1);
-        diva.append(butaoFeito);
-        diva.append(butaoX);
+        diva.append(li1); //coloca o li na div
+        diva.append(butaoFeito); // coloca o botao na div
+        diva.append(butaoX); // coloca o botao na div
 
-        lista.append(diva); //add a div a lista
+        lista.append(diva); //coloca a div na lista(ul)
+
+        //ordem: div > ul(lista) > diva > li, btn
     
         document.querySelector("#inputText").value ='';
     
@@ -183,11 +188,16 @@ function filter(){
 }
 
     
-  const filtros = () =>{
+const filtros = () =>{
         let filtro1 = document.querySelector(".filter-todo")
         // let option = 
         console.log(filtro1)
-    }
+}
 
+function criar_li(addText){
+    let li1 = document.createElement('li');
+    li1.innerHTML = addText;
+    li1.classList = "todo-item";
+}
 
 
