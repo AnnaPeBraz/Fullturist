@@ -5,29 +5,26 @@ if(logado){
     
     const dadosGuardadosJSON = localStorage.getItem("minhaToDo.listaSober"); 
     const formulario = document.querySelector('form') //puxa todo o formulario
-    let listaToDo = Array() // antes era um Array()
+    let listaToDo = Array()//JSON.parse(dadosGuardadosJSON) // antes era um Array()
     const inputForm = document.querySelector('#inputText') // esta colocando na variavel inputForm as informações do formulario.
     const listaDom = document.querySelector("#ul") // pega o ul do DOM
     let item = {}
     const filtroTeste = document.querySelector('.filter-todo') //pega a opção de uncompleted do filtro/select
-    const ToDo = JSON.parse(dadosGuardadosJSON)
-    console.log(ToDo)
+
     
-    function mostraNaDom(lista){ //colocando as informções do JSON na DOM
-        lista.forEach(item => {
-            mostraNaPag(item.texto)
-        });
-    }
+    // function mostraNaDom(lista){ //colocando as informções do JSON na DOM
+    //     lista.forEach(item => {
+    //         mostraNaPag(item.texto)
+    //     });
+    // }
     
-    mostraNaDom(ToDo)
+    // mostraNaDom(listaToDo)
     
     formulario.addEventListener('submit', (eventSubmit) =>{ //ao realizar a ação de submit do formulario, realizar essa função
         eventSubmit.preventDefault();
         if (validacaoComum(inputForm.value)){ //se validação for positiva, insere na lista o valor
             inLista(inputForm.value) //funçao de add na lista/array
             mostraNaPag(inputForm.value)
-            localStorage.setItem("minhaToDo.listaSober", JSON.stringify(listaToDo));
-
         }else{
             alert('Por favor escreva algum valor')
         }
@@ -42,6 +39,7 @@ if(logado){
         let botaoX = document.createElement('button') //botao de excluir
         let botaoOk = document.createElement('button') //botao de tarefa feita
         let divNova = document.createElement('div') //criação da div que engloba todo o resto
+        // localStorage.setItem("minhaToDo.listaSober", JSON.stringify(listaToDo));
     
         //css do li
         itemLi.innerHTML = entrada
@@ -78,8 +76,7 @@ if(logado){
             // removeDaLista(listaToDo, botaoX)
             let divRemovida = document.querySelector('#div' + id)
             listaDom.removeChild(divRemovida);
-            console.log(listaToDo)
-            localStorage.setItem("minhaToDo.listaSober", JSON.stringify(listaToDo));
+            // localStorage.setItem("minhaToDo.listaSober", JSON.stringify(listaToDo));
         })
     
         botaoOk.addEventListener('click', (b) => {
@@ -102,8 +99,7 @@ if(logado){
             "status": "pendente"
         }
         listaToDo.push(item)
-        // localStorage.setItem("minhaToDo.listaSober", JSON.stringify(listaToDo));
-
+         
     }
     
     function validacaoComum(entrada){

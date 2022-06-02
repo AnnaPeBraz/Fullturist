@@ -1,12 +1,9 @@
+
+const formIn = document.querySelector('form'); //le o formulario da DOM
+const lista = document.querySelector(".todo-list") //le a lista da DOM (ul)
 const dados = localStorage.getItem('lista'); 
 
 const listToDo = JSON.parse(dados);  
-
-const formIn = document.querySelector('form'); //le o formulario da DOM
-console.log(formIn)
-
-const lista = document.querySelector(".todo-list") //le a lista da DOM (ul)
-console.log(lista)
 
 const testeProcura = document.querySelector('.select')
 
@@ -74,7 +71,6 @@ const pressButtonPlus = function(eventSubmit){
                      listToDo.splice(i,1);
                  }
             }console.log(listToDo)
-            
 
             //remover elemento da tela
             let divRemovida = document.querySelector('#div'+id)
